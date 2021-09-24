@@ -27,13 +27,17 @@ th, td {
 	margin-bottom: 12px;
 }
 
+#games {
+	max-width: 1200px;
+}
+
 .game {
 	font-size: .75rem;
-    border: solid 1px black;
-    display: inline-block;
-    padding: 8px;
-    height: 90px;
-    width: 90px;
+	border: solid 1px black;
+   	display: inline-block;
+   	padding: 8px;
+   	height: 90px;
+   	width: 90px;
 }
 
 .game div:first-child {
@@ -41,5 +45,5 @@ th, td {
 }
 
 .game-pick-cb:checked {
-    pointer-events: none;
+ 	pointer-events: none;
 }

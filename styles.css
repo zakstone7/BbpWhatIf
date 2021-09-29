@@ -12,6 +12,15 @@ table {
 
 }
 
+th {
+	cursor: pointer;
+}
+
+th:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
 th, td {
 	border: solid 1px black;
 	padding: 6px;
@@ -31,6 +40,12 @@ th, td {
 	max-width: 1200px;
 }
 
+#search-wrapper {
+	margin: 8px auto;
+    display: flex;
+    justify-content: center;
+}
+
 .game {
 	font-size: .75rem;
 	border: solid 1px black;
@@ -46,4 +61,16 @@ th, td {
 
 .game-pick-cb:checked {
  	pointer-events: none;
+}
+
+.sort-ascending:after {
+	content: "\25B2";
+}
+
+.sort-descending:after {
+	content: "\25BC";
+}
+
+.hide {
+	display: none;
 }

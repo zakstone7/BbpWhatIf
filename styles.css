@@ -21,11 +21,6 @@ th:hover {
 	text-decoration: underline;
 }
 
-th, td {
-	border: solid 1px black;
-	padding: 6px;
-}
-
 #main {
 	margin: 0 auto;
 }

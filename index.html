@@ -13,16 +13,23 @@
 			</div>
 			<div id="layout">
 				<div id="games"></div>
-				<table>
-					<thead>
-						<tr>
-							<th>Position</th>
-							<th>Name</th>
-							<th>Score</th>
-						</tr>
-					</thead>
-					<tbody></tbody>
-				</table>
+				<div>
+					<div id="search-wrapper">
+						<input id="search-input" type="text" placeholder="Search" onkeyup="search();" />
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th data-column="position" onclick="sortClick(this);">Position  </th>
+								<th data-column="name" onclick="sortClick(this);">Name  </th>
+								<th data-column="score" onclick="sortClick(this);">Score  </th>
+								<th data-column="ytd-score" onclick="sortClick(this);">YTD Score  </th>
+								<th data-column="ytd-position" onclick="sortClick(this);">YTD Position  </th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</body>

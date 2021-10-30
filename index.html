@@ -27,10 +27,39 @@
 								<th data-column="score" onclick="sortClick(this);">Score  </th>
 								<th data-column="ytd-score" onclick="sortClick(this);">YTD Score  </th>
 								<th data-column="ytd-position" onclick="sortClick(this);">YTD Position  </th>
+								<th data-column="ytd-position">Analysis</th>
 							</tr>
 						</thead>
 						<tbody></tbody>
 					</table>
+				</div>
+			</div>
+		</div>
+		<div id="analysis">			
+			<h1></h1>
+			<h4></h4>
+			<div id="analysis-form">
+				<div>
+					<div>
+						<label>Include Ties</label>
+						<input type="hidden" id="anaylsis-name-input" />
+						<input type="checkbox" id="include-ties-cb" disabled="disabled" />
+					</div>
+					<div>
+						<button onclick="analyze();">Calculate</button>
+					</div>
+				</div>
+			</div>
+			<div id="anaysis-results">
+				<div id="must-win-games-outer">
+					<h4>Must Win Games</h4>
+					<ol id="must-win-games">
+					</ol>
+				</div>
+				<div id="winning-scenarios-outer">
+					<h4>Winning Scenarios</h4>
+					<div id="winning-scenarios">
+					</div>
 				</div>
 			</div>
 		</div>

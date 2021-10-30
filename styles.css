@@ -12,18 +12,26 @@ table {
 
 }
 
-th {
+th:not(:last-child) {
 	cursor: pointer;
 }
 
-th:hover {
+th:not(:last-child):hover {
 	color: blue;
 	text-decoration: underline;
 }
 
-#main {
+#main, #analysis {
 	margin: 0 auto;
 }
+
+#analysis {
+	display: none;
+}
+
+	#analysis h4 {
+		text-align: center;
+	}
 
 #week-picker-wrapper {
 	display: flex;
@@ -68,4 +76,30 @@ th:hover {
 
 .hide {
 	display: none;
+}
+
+.analyze-button {
+	color: blue;
+}
+
+#analysis-form {
+    flex-direction: column;
+    align-items: center;s
+}
+
+	#analysis-form button {
+		width: 100%;
+    	margin-top: 8px;
+	}
+
+#must-win-games-outer, #winning-scenarios-outer {
+	display: none;
+	flex-direction: column;
+    align-items: center;
+}
+
+.winning-scenario {
+	display: inline-block;
+    border: solid 1px black;
+    padding: 24px 36px;
 }
